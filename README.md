@@ -2,7 +2,7 @@
 
 ## Project Name and Selected Project
 ### GitHub Crawler
-We selected Project Option 5, the GitHub Crawler project. It is a modern C++ command-line program that queries GitHub for public repositories, converts API responses into C++ objects, and lets the user filter, sort, rank, and export the collected metadata. This is intentionally a crawler/metadata project, not a source-code or Git-history analyzer. HTTP and JSON are supporting infrastructure provided through libraries with our project focused on C++ program design.
+We selected Project Option 5, the GitHub Crawler project. It is a modern C++ command-line program that queries GitHub for public repositories, converts API responses into C++ objects, and lets the user filter, sort, rank, and export the collected metadata. This is intentionally a crawler/metadata project, not a source-code or Git-history analyzer. HTTP and JSON are supporting infrastructure provided through libraries with our project focused on C++ program design. At the moment, this is simply a foundation and only prints "Hello, World!"
 
 ## Team Members
 
