@@ -17,9 +17,9 @@ A#: A02421770
 Email: a02421770@usu.edu
 
 ### Connor Gould
-A#: [put your number here]
+A#: A02341215
 
-Email: [put your email here]
+Email: a02341215@usu.edu
 
 ## Setup
 
