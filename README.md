@@ -12,9 +12,9 @@ A#: A02357348
 Email: A02357348@usu.edu
 
 ### Jake Peterson
-A#: [put your number here]
+A#: A02421770
 
-Email: [put your email here]
+Email: a02421770@usu.edu
 
 ## Connor Gould
 A#: [put your number here]
