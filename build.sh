@@ -4,8 +4,10 @@ set -e
 
 BUILD_DIR="build"
 
-cmake -S . -B "$BUILD_DIR" \
--G "Visual Studio 17 2022" \
--T ClangCL
+rm -rf "$BUILD_DIR"
 
-cmake --build "$BUILD_DIR" --config Release
+cmake -S . -B "$BUILD_DIR" \
+    -G Ninja \
+    -DCMAKE_CXX_COMPILER=clang++
+
+cmake --build "$BUILD_DIR"
