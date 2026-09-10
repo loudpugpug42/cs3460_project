@@ -6,7 +6,7 @@ We selected Project Option 5, the GitHub Crawler project. It is a modern C++ com
 
 ## Team Members
 
-### Saxton Calvert
+### Saxton Calvert - Team Leader
 A#: A02357348
 
 Email: A02357348@usu.edu
@@ -16,7 +16,7 @@ A#: A02421770
 
 Email: a02421770@usu.edu
 
-## Connor Gould
+### Connor Gould
 A#: [put your number here]
 
 Email: [put your email here]
