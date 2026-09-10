@@ -22,6 +22,15 @@ A#: [put your number here]
 Email: [put your email here]
 
 ## Setup
+
+### Requirements
+This project uses:
+- C++20 or later
+- CLang / CLang++ (our program uses CLang++ as provided by LLVM 23.1.0)
+- CMake
+- Git
+- Command-line build and execution
+
 ### Clone the repository and enter the project directory:
 
 ```
