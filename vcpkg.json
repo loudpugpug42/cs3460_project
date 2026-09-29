@@ -1,0 +1,13 @@
+{
+    "name": "github-crawler",
+    "version-semver": "1.0.0",
+    "dependencies": [
+        {
+            "name": "cpp-httplib",
+            "features": [
+                "openssl"
+            ]
+        },
+        "nlohmann-json"
+    ]
+}
