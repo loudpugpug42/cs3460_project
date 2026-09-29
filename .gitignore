@@ -1,2 +1,3 @@
-# Ignore a build directory
 /build/
+.vs/
+*.user
