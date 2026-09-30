@@ -9,6 +9,12 @@
 
 using json = nlohmann::json;
 
+/**
+ * @brief Parses a JSON string containing GitHub repository data.
+ * @param body The JSON string to parse.
+ * @return A vector of Repository objects parsed from the JSON.
+ * @throws std::runtime_error if the JSON is invalid or does not contain the expected structure.
+ */
 std::vector<Repository> RepositoryParser::parse(
     const std::string& body) const {
 

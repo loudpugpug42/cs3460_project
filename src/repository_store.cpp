@@ -10,6 +10,10 @@
 
 using json = nlohmann::json;
 
+/**
+ * @brief Prints information about a list of repositories.
+ * @param repos The list of repositories to print.
+ */
 void RepositoryStore::print(
     const std::vector<Repository>& repos) const {
 
@@ -64,6 +68,11 @@ void RepositoryStore::print(
     }
 }
 
+/**
+ * @brief Saves a list of repositories to a JSON file.
+ * @param repos The list of repositories to save.
+ * @param filename The name of the file to save to.
+ */
 void RepositoryStore::save(
     const std::vector<Repository>& repos,
     const std::string& filename) const {

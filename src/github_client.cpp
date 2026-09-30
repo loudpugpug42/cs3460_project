@@ -6,6 +6,11 @@
 #include <iostream>
 #include <string>
 
+/**
+ * @brief Searches for GitHub repositories based on the provided options.
+ * @param options The search options.
+ * @return An optional string containing the search results, or std::nullopt if the request failed.
+ */
 std::optional<std::string> GitHubClient::searchRepositories(
     const SearchOptions& options) const {
 

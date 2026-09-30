@@ -4,6 +4,9 @@
 #include <cstdint>
 #include <string>
 
+/**
+ * @brief Represents a GitHub repository.
+ */
 struct Repository {
     std::string owner;
     std::string name;
@@ -16,6 +19,9 @@ struct Repository {
     std::string url;
 };
 
+/**
+ * @brief Represents options for searching repositories.
+ */
 struct SearchOptions {
     std::string query;
     std::size_t count{100};
