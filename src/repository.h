@@ -26,3 +26,13 @@ struct SearchOptions {
     std::string query;
     std::size_t count{100};
 };
+
+/**
+ * @brief Represents options for analyzing repositories.
+ */
+struct AnalysisOptions {
+    std::uint64_t min_stars{};
+    std::string language;
+    std::string sort_key{"stars"};
+    std::size_t top_n{10};
+};

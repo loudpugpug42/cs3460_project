@@ -6,13 +6,25 @@
 #include <vector>
 
 /**
- * @brief A class for storing and managing a collection of GitHub repositories.
+ * @brief Provides functionality to print and save repository data.
  */
 class RepositoryStore {
 public:
+    // Collection output
     void print(const std::vector<Repository>& repos) const;
 
     void save(
         const std::vector<Repository>& repos,
-        const std::string& filename) const;
+        const std::string& filename
+    ) const;
+
+    // Analysis output
+    void printTable(
+        const std::vector<Repository>& repos
+    ) const;
+
+    void saveCsv(
+        const std::vector<Repository>& repos,
+        const std::string& filename
+    ) const;
 };
