@@ -1,0 +1,57 @@
+[
+  {
+    "description": "An Open Source Machine Learning Framework for Everyone",
+    "forks": 79636,
+    "language": "C++",
+    "name": "tensorflow",
+    "owner": "tensorflow",
+    "size": 1405731,
+    "stars": 201061,
+    "updated_at": "2026-10-17T00:13:40Z",
+    "url": "https://github.com/tensorflow/tensorflow"
+  },
+  {
+    "description": "LLM inference in C/C++",
+    "forks": 24467,
+    "language": "C++",
+    "name": "llama.cpp",
+    "owner": "ggml-org",
+    "size": 459833,
+    "stars": 131423,
+    "updated_at": "2026-10-17T00:12:14Z",
+    "url": "https://github.com/ggml-org/llama.cpp"
+  },
+  {
+    "description": "A framework for building native applications using React",
+    "forks": 25321,
+    "language": "C++",
+    "name": "react-native",
+    "owner": "react",
+    "size": 988710,
+    "stars": 126693,
+    "updated_at": "2026-10-16T22:29:47Z",
+    "url": "https://github.com/react/react-native"
+  },
+  {
+    "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS",
+    "forks": 17618,
+    "language": "C++",
+    "name": "electron",
+    "owner": "electron",
+    "size": 224741,
+    "stars": 123360,
+    "updated_at": "2026-10-16T23:33:48Z",
+    "url": "https://github.com/electron/electron"
+  },
+  {
+    "description": "Godot Engine – Multi-platform 2D and 3D game engine",
+    "forks": 27081,
+    "language": "C++",
+    "name": "godot",
+    "owner": "godotengine",
+    "size": 1895362,
+    "stars": 118518,
+    "updated_at": "2026-10-17T00:08:57Z",
+    "url": "https://github.com/godotengine/godot"
+  }
+]

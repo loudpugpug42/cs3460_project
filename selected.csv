@@ -1,0 +1,6 @@
+owner,name,description,stars,forks,language,size,updated_at,url
+tensorflow,tensorflow,An Open Source Machine Learning Framework for Everyone,201061,79636,C++,1405731,2026-10-17T00:13:40Z,https://github.com/tensorflow/tensorflow
+ggml-org,llama.cpp,LLM inference in C/C++,131423,24467,C++,459833,2026-10-17T00:12:14Z,https://github.com/ggml-org/llama.cpp
+react,react-native,A framework for building native applications using React,126693,25321,C++,988710,2026-10-16T22:29:47Z,https://github.com/react/react-native
+electron,electron,":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS",123360,17618,C++,224741,2026-10-16T23:33:48Z,https://github.com/electron/electron
+godotengine,godot,Godot Engine – Multi-platform 2D and 3D game engine,118518,27081,C++,1895362,2026-10-17T00:08:57Z,https://github.com/godotengine/godot
