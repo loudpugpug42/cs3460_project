@@ -4,48 +4,36 @@ set -euo pipefail
 
 BUILD_DIR="build"
 
-# Check required tools.
-if ! command -v cmake >/dev/null 2>&1; then
-    echo "Error: CMake was not found in PATH."
-    exit 1
-fi
+for tool in cmake ninja clang++; do
+    if ! command -v "$tool" >/dev/null 2>&1; then
+        echo "Error: $tool was not found in PATH."
+        echo "Please install $tool and make it available in PATH."
+        exit 1
+    fi
+done
 
-if ! command -v ninja >/dev/null 2>&1; then
-    echo "Error: Ninja was not found in PATH."
-    exit 1
-fi
-
-if ! command -v clang++ >/dev/null 2>&1; then
-    echo "Error: clang++ was not found in PATH."
-    exit 1
-fi
-
-# Find clang++ using the Git Bash PATH and convert the path
-# to Windows format for CMake.
-CLANGXX_UNIX="$(command -v clang++)"
-CLANGXX="$(cygpath -w "$CLANGXX_UNIX")"
-
-if [[ -z "$VCPKG_ROOT" ]]; then
+if [[ -z "${VCPKG_ROOT:-}" ]]; then
     echo "Error: VCPKG_ROOT is not set."
+    echo "Set it to the location of your vcpkg installation."
     exit 1
 fi
 
-VCPKG_TOOLCHAIN="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
+VCPKG_TOOLCHAIN="${VCPKG_ROOT%/}/scripts/buildsystems/vcpkg.cmake"
 
 if [[ ! -f "$VCPKG_TOOLCHAIN" ]]; then
-    echo "Error: vcpkg toolchain file not found:"
+    echo "Error: vcpkg CMake toolchain was not found:"
     echo "$VCPKG_TOOLCHAIN"
     exit 1
 fi
 
-echo "Using Clang++: $CLANGXX"
-echo "Using vcpkg: $VCPKG_ROOT"
-
-rm -rf "$BUILD_DIR"
+echo "Using C++ compiler: $(clang++ --version | head -n 1)"
+echo "Using CMake: $(cmake --version | head -n 1)"
+echo "Using Ninja: $(ninja --version)"
+echo "Using vcpkg root: $VCPKG_ROOT"
 
 cmake -S . -B "$BUILD_DIR" \
     -G Ninja \
-    -DCMAKE_CXX_COMPILER="$CLANGXX" \
+    -DCMAKE_CXX_COMPILER=clang++ \
     -DCMAKE_TOOLCHAIN_FILE="$VCPKG_TOOLCHAIN"
 
-cmake --build "$BUILD_DIR"
+cmake --build "$BUILD_DIR" --parallel
