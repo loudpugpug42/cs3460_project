@@ -58,9 +58,9 @@ flowchart TD
 
 ### 2.1 Design approach
 
-The proposed design follows separation of concerns and encapsulation. Network communication, API parsing, local file loading, analysis, console reporting, and file export are separate responsibilities. `main()` will handle command-line arguments and delegate the requested operation to a `RepositoryApplication` coordinator. It will not contain HTTP requests, JSON field extraction, filtering loops, sorting logic, or CSV formatting.
+The proposed design follows the separation of concerns and encapsulation. Network communication, API parsing, local file loading, analysis, console reporting, and file export are separate responsibilities. `main()` will handle command-line arguments and delegate the requested operation to a `RepositoryApplication` coordinator. It will not contain HTTP requests, JSON field extraction, filtering loops, sorting logic, or CSV formatting.
 
-The existing `Repository` struct remains the single representation of repository metadata across both workflows. `SearchOptions` and `AnalysisOptions` remain small value types that carry configuration rather than behavior. This avoids duplicate repository models and keeps the JSON dataset produced by collection compatible with the local analysis workflow.
+The existing `Repository` struct remains the single representation of repository metadata across both workflows. `SearchOptions` and `AnalysisOptions` remain small value types that carry configuration rather than behavior. This avoids duplicate repository models and keeps the JSON dataset produced by the collection compatible with the local analysis workflow.
 
 ### 2.2 Major classes and responsibilities
 
